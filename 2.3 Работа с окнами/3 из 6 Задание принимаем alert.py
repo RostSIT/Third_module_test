@@ -2,8 +2,6 @@ from selenium import webdriver
 import time
 import math
 
-
-
 browser = webdriver.Chrome()
 browser.get('http://suninjuly.github.io/alert_accept.html')
 button = browser.find_element_by_xpath('/html/body/form/div/div/button')
@@ -14,7 +12,7 @@ alert.accept()
 
 
 def calc(x):
-    return str(math.log(abs(12*math.sin(int(x)))))
+    return str(math.log(abs(12 * math.sin(int(x)))))
 
 
 x_el = browser.find_element_by_css_selector('span.nowrap#input_value')
