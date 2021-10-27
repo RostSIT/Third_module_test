@@ -36,9 +36,10 @@ def browser(request):
     yield browser
     print("\nquit browser..")
     browser.quit()
+test_parser.py:
 """
 
-test_parser.py:
+
 
 link = "http://selenium1py.pythonanywhere.com/"
 
