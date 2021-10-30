@@ -85,3 +85,11 @@ class TestLogin:
         assert self.x == 'Correct!', \
             f'expected {self.a}, {self.x}'
 
+
+a = TestLogin()
+a.answer()
+a.test_guest_should_see_login_link()
+
+
+
+
