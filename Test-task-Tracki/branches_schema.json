@@ -1,0 +1,130 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "array",
+  "items": [
+    {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "commit": {
+          "type": "object",
+          "properties": {
+            "sha": {
+              "type": "string"
+            },
+            "url": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "sha",
+            "url"
+          ]
+        },
+        "protected": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "name",
+        "commit",
+        "protected"
+      ]
+    },
+    {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "commit": {
+          "type": "object",
+          "properties": {
+            "sha": {
+              "type": "string"
+            },
+            "url": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "sha",
+            "url"
+          ]
+        },
+        "protected": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "name",
+        "commit",
+        "protected"
+      ]
+    },
+    {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "commit": {
+          "type": "object",
+          "properties": {
+            "sha": {
+              "type": "string"
+            },
+            "url": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "sha",
+            "url"
+          ]
+        },
+        "protected": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "name",
+        "commit",
+        "protected"
+      ]
+    },
+    {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "commit": {
+          "type": "object",
+          "properties": {
+            "sha": {
+              "type": "string"
+            },
+            "url": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "sha",
+            "url"
+          ]
+        },
+        "protected": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "name",
+        "commit",
+        "protected"
+      ]
+    }
+  ]
+}
