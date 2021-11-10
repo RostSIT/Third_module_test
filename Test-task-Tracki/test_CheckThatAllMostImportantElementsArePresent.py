@@ -19,9 +19,12 @@ def open_test_page(browser):
     return browser
 
 
-@pytest.mark.parametrize('element', ["/html/body/div[1]/div[2]/div/img", "/html/body/div[1]/div[3]/form/div[1]/div[1]/div[1]/div/div[2]/input",
-                                     "/html/body/div[1]/div[3]/form/div[1]/div[1]/div[1]/div/div[3]/div[2]/span", "/html/body/div[1]/div[3]/form/div[1]/div[1]/div[1]/div/div[3]/div[3]/svg/path[1]",
-                                     "/html/body/div[1]/div[3]/form/div[1]/div[1]/div[1]/div/div[3]/div[3]/svg/path[1]", "https://stepik.org/lesson/236903/step/1",
-                                     "/html/body/div[1]/div[3]/form/div[1]/div[1]/div[3]/center/input[1]", "/html/body/div[1]/div[3]/form/div[1]/div[1]/div[3]/center/input[2]"])
+@pytest.mark.parametrize('element', ["/html/body/div[1]/div[2]/div/img", "/html/body/div[1]/div[3]/form/div[1]/div["
+                                                                         "1]/div[1]/div/div[2]/input",
+                                     "/html/body/div[1]/div[3]/form/div[1]/div[1]/div[1]/div/div[3]/div[2]/span",
+                                     "//*[@id='gb']/div/div[1]/div/div[1]/a", "//*[@id='gb']/div/div[1]/div/div["
+                                                                              "2]/a", "//*[@id='gbwa']/div/a",
+                                     "/html/body/div[1]/div[3]/form/div[1]/div[1]/div[3]/center/input[1]",
+                                     "/html/body/div[1]/div[3]/form/div[1]/div[1]/div[3]/center/input[2]"])
 def test_check_google_main_page(open_test_page, element):
     assert open_test_page.find_element_by_xpath(element).is_displayed(), "Element was not found"
