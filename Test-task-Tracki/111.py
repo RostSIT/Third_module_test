@@ -6,7 +6,7 @@ test_link = "https://api.github.com/repos/Fantomas42/django-blog-zinnia"
 
 
 def test_check_amount_of_pull_requests():
-    json_response = requests.get(test_link+'/pulls').json()
+    json_response = requests.get(test_link+'/pulls?accept=application/vnd.github.v3+json').json()
     assert 9 == len(json_response)
 
 
