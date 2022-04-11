@@ -1,3 +1,10 @@
 .idea
 1.6 Поиск элементов с помощью Selenium WebDriver
 Test-task-Tracki
+conftest.py
+test_1_CompleteForm_32_13_13.py
+test_2_CompleteForm_32_13_13.py
+test_abs_project.py
+test_abs_project_WithUnittest.py
+test_parser.py
+test_rerun.py
