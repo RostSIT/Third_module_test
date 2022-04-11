@@ -43,7 +43,3 @@ inputAnswer.send_keys(calc(x))
 
 submit = browser.find_element(By.ID, 'solve')
 submit.click()
-
-
-
-
